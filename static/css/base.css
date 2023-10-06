@@ -223,6 +223,11 @@ i {
         padding: 10px;
     }
 
+    .home-description {
+        margin-left: 5%;
+        margin-right: 5%;
+        letter-spacing: 0.5px;
+    }
 
     .form-select {
         width: max-content;
