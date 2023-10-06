@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* background-color: #000; */
+    /* color: #fff; */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Home page Style  */
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+} */
+
+/* Style the container */
+.home-container {
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Style the image */
+.home-img {
+    min-width: 30px;
+    max-width: 300px;
+    min-height: 250px;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+/* Style the title */
+.home-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Style the description */
+.home-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+
+}
+
+/* Style the "Predict Now" button */
+.home-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Form Styles */
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-radio-label {
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+/* Button Styles */
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+i {
+    padding: 10px 5px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Result Page  */
+.result {
+    width: 300px;
+    color: red;
+}
+
+
+
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+
+    .form-select {
+        width: max-content;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

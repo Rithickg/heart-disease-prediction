@@ -1,0 +1,79 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<div class="container">
+    <h1 class="title">Heart Disease Prediction Form</h1>
+    <form action="/heart-disease" method="post" id="prediction-form">
+        <label for="age" class="form-label">Age:</label>
+        <input type="number" name="age" id="age" class="form-input" value="60"><br><br>
+
+        <label for="sex" class="form-label">Sex:</label>
+    </br>
+        <input type="radio" name="sex" id="sex_male" class="form-radio-label" value="1" checked>
+        <label for="sex_male" class="form-radio-label">Male</label>
+        <input type="radio" name="sex" id="sex_female" class="form-radio-label"  value="0">
+        <label for="sex_female" class="form-radio-label">Female</label><br><br>
+
+        <label for="cp" class="form-label">Chest Pain Type:</label>
+        <select name="cp" id="cp" class="form-select">
+            <option value="0">Typical Angina</option>
+            <option value="1">Atypical Angina</option>
+            <option value="2">Non-anginal Pain</option>
+            <option value="3">Asymptomatic</option>
+        </select><br><br>
+
+        <label for="trestbps" class="form-label">Resting Blood Pressure (mm Hg):</label>
+        <input type="number" name="trestbps" id="trestbps" class="form-input" value="150"><br><br>
+
+        <label for="chol" class="form-label">Cholesterol (mg/dl):</label>
+        <input type="number" name="chol" id="chol" class="form-input" value="233"><br><br>
+
+        <label for="fbs" class="form-label">Fasting Blood Sugar &gt; 120 mg/dl:</label>
+    </br>
+        <input type="radio" name="fbs" id="fbs_yes" class="form-radio-label" value="1">
+        <label for="fbs_yes" class="form-radio-label">Yes</label>
+        <input type="radio" name="fbs" id="fbs_no" class="form-radio-label" value="0" checked>
+        <label for="fbs_no" class="form-radio-label">No</label><br><br>
+
+        <label for="restecg" class="form-label">Resting Electrocardiographic Results:</label>
+        <select name="restecg" id="restecg" class="form-select">
+            <option value="0">Normal</option>
+            <option value="1">ST-T Wave Abnormality</option>
+            <option value="2">Left Ventricular Hypertrophy</option>
+        </select><br><br>
+
+        <label for="thalach" class="form-label">Maximum Heart Rate Achieved:</label>
+        <input type="number" name="thalach" id="thalach" class="form-input" value="125"><br><br>
+
+        <label for="exang" class="form-label">Exercise-Induced Angina:</label>
+    </br>
+        <input type="radio" name="exang" id="exang_yes" class="form-radio-label" value="1">
+        <label for="exang_yes" class="form-radio-label">Yes</label>
+        <input type="radio" name="exang" id="exang_no" class="form-radio-label" value="0" checked>
+        <label for="exang_no" class="form-radio-label">No</label><br><br>
+
+        <label for="oldpeak" class="form-label">ST Depression Induced by Exercise:</label>
+        <input type="number" step="0.1" name="oldpeak" id="oldpeak" class="form-input" value="2.1"><br><br>
+
+        <label for="slope" class="form-label">Slope of the Peak Exercise ST Segment:</label>
+        <select name="slope" id="slope" class="form-select">
+            <option value="0">Upsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Downsloping</option>
+        </select><br><br>
+
+        <label for="ca" class="form-label">Number of Major Vessels Colored by Fluoroscopy:</label>
+        <input type="number" name="ca" id="ca" class="form-input" value="2"><br><br>
+
+        <label for="thal" class="form-label">Thalassemia:</label>
+        <select name="thal" id="thal" class="form-select">
+            <option value="0">Normal</option>
+            <option value="1">Fixed Defect</option>
+            <option value="2">Reversible Defect</option>
+        </select><br><br>
+    </form>
+    <button type="submit" form="prediction-form" value="Submit" class="submit-button">Submit</button>
+</div>
+{% endblock %}
+
+

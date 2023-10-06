@@ -1,0 +1,13 @@
+{% extends 'prediction_form.html' %} 
+
+{% block title %}Result Page{% endblock %}
+
+{% block content %}
+
+<div class="home-container">
+    <img src="static/images/grapy-online-consultation-with-doctor-via-smartphone-1.png" alt="Heart Image" class="home-img" style="max-width: 300px;">
+    <h1>Result : {{ request.args.get('result') }}</h1>
+    
+</div>
+{% endblock %}
+

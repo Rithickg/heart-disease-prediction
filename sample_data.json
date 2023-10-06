@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "age": 60,
+            "sex": 1,
+            "cp": 0,
+            "trestbps": 150,
+            "chol": 233,
+            "fbs": 1,
+            "restecg": 1,
+            "thalach": 125,
+            "exang": 0,
+            "oldpeak": 2.1,
+            "slope": 1,
+            "ca": 2,
+            "thal": 3
+        },
+        {
+            "age": 55,
+            "sex": 0,
+            "cp": 1,
+            "trestbps": 130,
+            "chol": 245,
+            "fbs": 0,
+            "restecg": 0,
+            "thalach": 145,
+            "exang": 1,
+            "oldpeak": 1.2,
+            "slope": 2,
+            "ca": 1,
+            "thal": 2
+        }
+    ]
+}

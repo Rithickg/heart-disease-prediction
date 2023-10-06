@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="static/css/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <script src="static/js/script.js"></script>
+    <div class="navbar">
+        {% include 'navbar.html' %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        <div class="home-container">
+            
+            <img src="static/images/beam-online-medical-consultation.gif" alt="Doctor Image" class="home-img" />
+            <h1 class="home-title">Heart Disease Prediction</h1>
+            <p class="home-description">Predictive analytics powered by machine learning algorithms has revolutionized the field of healthcare, particularly in the early detection and prognosis of heart disease. By analyzing a patient's medical history, lifestyle factors, and clinical data, machine learning models can identify subtle patterns and risk factors that might go unnoticed by traditional diagnostic methods. These models provide healthcare professionals with valuable insights, enabling them to make more accurate and timely decisions for heart disease prevention and treatment. With the power of predictive analytics, we are taking significant strides towards a future where heart disease can be detected and managed with greater precision, ultimately improving patient outcomes and saving lives.</p>
+            
+
+            <a href="/prediction" class="home-button">Predict Now</a>
+        </div>
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+        {% include 'footer.html' %}
+    </div>
+</body>
+</html>
